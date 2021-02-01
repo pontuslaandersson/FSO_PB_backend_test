@@ -7,9 +7,9 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
 	"test": "echo \"Error: no test specified\" && exit 1",
-	"build:ui": "rm -rf build && cd ../phonebook && npm run build --prod && cp -r build ../FSO_PB_backend_test/",
+	"build_ui": "rm -rf build && cd ../phonebook && npm run build --prod && cp -r build ../FSO_PB_backend_test/",
 	"deploy": "git push heroku main",
-	"deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",    
+	"deploy_full": "npm run build_ui && git add . && git commit -m uibuild && npm run deploy",    
 	"logs:prod": "heroku logs --tail"
   },
   "repository": {
